@@ -55,4 +55,4 @@ A professional implementation of the "AI Explore" frontend challenge. This appli
 
 ## 🎥 Demo
 
-[Link to Video Demo]
+[![Watch the video](https://img.shields.io/badge/Watch_Demo-Loom-blue?style=for-the-badge&logo=loom)](https://www.loom.com/share/c917228894b14f16b8547ce60de783f7)

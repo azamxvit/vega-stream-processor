@@ -1,10 +1,8 @@
 import { useEffect, useRef } from 'react';
 import embed from 'vega-embed';
-// Импортируем тот же тип, что и в парсере
 import type { TopLevelSpec } from 'vega-lite';
 
 interface VegaChartProps {
-  // Строгая типизация: либо готовая спецификация, либо ничего
   spec: TopLevelSpec | null;
 }
 
@@ -12,17 +10,14 @@ export const VegaChart = ({ spec }: VegaChartProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Проверяем наличие DOM-узла и объекта спеки
     if (containerRef.current && spec) {
-      // Обертка embed возвращает Promise, поэтому используем .catch
       embed(containerRef.current, spec, { 
         actions: false, 
-        mode: 'vega-lite', // Явно указываем режим работы с Vega-Lite
+        mode: 'vega-lite',
         renderer: 'svg',
         width: 400,
         height: 250
       }).catch((err: Error) => {
-        // Используем явный тип Error вместо any для обработчика
         console.debug("Vega runtime update:", err.message);
       });
     }
