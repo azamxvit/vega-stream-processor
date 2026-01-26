@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-completed-success)
 ![Tech](https://img.shields.io/badge/stack-React_18_|_TypeScript_|_Vite_|_Tailwind_v4-blue)
 
-A professional implementation of the "AI Explore" frontend challenge. This application emulates Server-Sent Events (SSE) data streaming from an LLM, parses Markdown responses in real-time, and renders **Vega-Lite** charts automatically as soon as a valid specification is detected.
+Hello everyone! A professional implementation of the "AI Explore" frontend challenge. This application emulates Server-Sent Events (SSE) data streaming from an LLM, parses Markdown responses in real-time, and renders **Vega-Lite** charts automatically as soon as a valid specification is detected.
 
 ## 🚀 Key Features
 
